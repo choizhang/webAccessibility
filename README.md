@@ -30,15 +30,15 @@
           <p>目前支持banner, complementary, contentinfo, form, main, navigation, search，region（部分支持）</p>
           <div>
             <pre class="prettyprint linenums Lang-css">
-&lt;div role=&quot;banner&quot; aria-label=&quot;广告区块&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;<br>
-&lt;div role=&quot;contentinfo&quot; aria-label=&quot;补充内容区块&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;<br>
-&lt;header role=&quot;banner&quot; aria-label=&quot;广告区块&quot; tabindex=&quot;0&quot;&gt;&lt;/header&gt;<br>
-&lt;nav role=&quot;navigation&quot; aria-label=&quot;导航区块&quot; tabindex=&quot;0&quot;&gt;&lt;/nav&gt;<br>
-&lt;div role=&quot;main&quot; aria-label=&quot;主体区块&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;<br>
-&lt;div role=&quot;region&quot; aria-label=&quot;XX模块&quot; tabindex=&quot;0&quot; aria-labelledby=&quot;modheader&quot;&gt; <br>
-  &lt;h3 id=&quot;modheader&quot;&gt;Module Header&lt;/h3&gt; <br>
-  &lt;div&gt;Module content&lt;/div&gt; <br>
-&lt;/div&gt;
+    <div role="banner" aria-label="广告区块" tabindex="0"></div><br>
+    <div role="contentinfo" aria-label="补充内容区块" tabindex="0"></div><br>
+    <header role="banner" aria-label="广告区块" tabindex="0"></header><br>
+    <nav role="navigation" aria-label="导航区块" tabindex="0"></nav><br>
+    <div role="main" aria-label="主体区块" tabindex="0"></div><br>
+    <div role="region" aria-label="XX模块" tabindex="0" aria-labelledby="modheader"> <br>
+      <h3 id="modheader">Module Header</h3> <br>
+      <div>Module content</div> <br>
+    </div>
             </pre>
           </div>
       </div>
@@ -70,28 +70,28 @@
           <p><a href="second-menu/index.html" target="_blank">无障碍的二级菜单demo例子</a></p>
 
 ##html
-    &lt;div role=&quot;navigation&quot;&gt;<br>
-    &lt;ul role=&quot;menubar&quot; class=&quot;menubar&quot;&gt;<br>
-    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;tt&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; aria-label=&quot;QQ特权菜单，下键打开菜单，ESC关闭&quot; class=&quot;pop-menu pop-menu1&quot;&gt;<br>
-    &lt;a href=&quot;javascript:;&quot;&gt;QQ特权&lt;/a&gt;<br>
-    &lt;ul role=&quot;menu&quot; aria-hidden=&quot;true&quot;&gt;<br>
-    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;移动专区&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;安全专区&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;网页专区&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;/ul&gt;<br>
-    &lt;/li&gt;<br>
-    &lt;li role=&quot;menuitem&quot; tabindex=&quot;-1&quot; aria-haspopup=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;tt tt1&quot;&gt;游戏特权&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; aria-label=&quot;生活特权菜单，下键打开菜单，ESC关闭&quot; class=&quot;pop-menu pop-menu2&quot;&gt;<br>
-    &lt;a href=&quot;javascript:;&quot;&gt;生活特权&lt;/a&gt;<br>
-    &lt;ul role=&quot;menu&quot; aria-hidden=&quot;true&quot;&gt;<br>
-    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;移动专区&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;安全专区&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;网页专区&lt;/a&gt;&lt;/li&gt;<br>
-    &lt;/ul&gt;<br>
-    &lt;/li&gt;<br>
-    &lt;/ul&gt;<br>
-    &lt;/div&gt;
+    <div role="navigation"><br>
+    <ul role="menubar" class="menubar"><br>
+    <li role="menuitem" aria-haspopup="false"><a href="javascript:;" class="tt">首页</a></li><br>
+    <li role="menuitem" aria-haspopup="true" tabindex="0" aria-label="QQ特权菜单，下键打开菜单，ESC关闭" class="pop-menu pop-menu1"><br>
+    <a href="javascript:;">QQ特权</a><br>
+    <ul role="menu" aria-hidden="true"><br>
+    <li role="menuitemradio" aria-checked="false"><a href="javascript:;">移动专区</a></li><br>
+    <li role="menuitemradio" aria-checked="false"><a href="javascript:;">安全专区</a></li><br>
+    <li role="menuitemradio" aria-checked="false"><a href="javascript:;">网页专区</a></li><br>
+    </ul><br>
+    </li><br>
+    <li role="menuitem" tabindex="-1" aria-haspopup="false"><a href="javascript:;" class="tt tt1">游戏特权</a></li><br>
+    <li role="menuitem" aria-haspopup="true" tabindex="0" aria-label="生活特权菜单，下键打开菜单，ESC关闭" class="pop-menu pop-menu2"><br>
+    <a href="javascript:;">生活特权</a><br>
+    <ul role="menu" aria-hidden="true"><br>
+    <li role="menuitemradio" aria-checked="false"><a href="javascript:;">移动专区</a></li><br>
+    <li role="menuitemradio" aria-checked="false"><a href="javascript:;">安全专区</a></li><br>
+    <li role="menuitemradio" aria-checked="false"><a href="javascript:;">网页专区</a></li><br>
+    </ul><br>
+    </li><br>
+    </ul><br>
+    </div>
     
 ##js
     1.需要调用jquery库
@@ -127,23 +127,23 @@
     </div>
                  
 ##html
-    &lt;div class=&quot;com-tab&quot;&gt;
-        &lt;ul class=&quot;com-tab-listtitle&quot;&gt;
-            &lt;li class=&quot;com-tab-nownav&quot; data-url=&quot;1.html&quot; tabindex=&quot;0&quot;&gt;&lt;a href=&quot;1.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片1&lt;/a&gt;&lt;/li&gt;
-            &lt;li tabindex=&quot;0&quot; data-url=&quot;2.html&quot;&gt;&lt;a href=&quot;2.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片2&lt;/a&gt;&lt;/li&gt;
-            &lt;li tabindex=&quot;0&quot; data-url=&quot;3.html&quot;&gt;&lt;a href=&quot;3.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片3&lt;/a&gt;&lt;/li&gt;
-            &lt;!--&lt;a href=&quot;aaa.html&quot; class=&quot;com-tab-link&quot;&gt;&amp;gt;&amp;gt;更多&lt;/a&gt;--&gt;
-        &lt;/ul&gt;
-        &lt;div class=&quot;com-tab-content&quot;&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;1.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://wapstatic.kf0309.3g.qq.com/reznov/component/img/01.jpg&quot; alt=&quot;图片1&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;2.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://source1.qq.com/wsd/blank.png&quot; data-src=&quot;http://appimg1.3g.qq.com/msoft/icon/zhuanti/heji3_600_200.jpg&quot; alt=&quot;图片2&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;3.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://source1.qq.com/wsd/blank.png&quot; data-src=&quot;http://appimg1.3g.qq.com/msoft/icon/zhuanti/3D630_200.jpg&quot; alt=&quot;图片3&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;a href=&quot;javascript:;&quot; class=&quot;banner-prev&quot; title=&quot;上一个&quot;&gt;上一个&lt;/a&gt;
-        &lt;a href=&quot;javascript:;&quot; class=&quot;banner-next&quot; title=&quot;下一个&quot;&gt;下一个&lt;/a&gt;
-    &lt;/div&gt;
+    <div class="com-tab">
+        <ul class="com-tab-listtitle">
+            <li class="com-tab-nownav" data-url="1.html" tabindex="0"><a href="1.html" target="_blank" tabindex="-1">图片1</a></li>
+            <li tabindex="0" data-url="2.html"><a href="2.html" target="_blank" tabindex="-1">图片2</a></li>
+            <li tabindex="0" data-url="3.html"><a href="3.html" target="_blank" tabindex="-1">图片3</a></li>
+            <!--<a href="aaa.html" class="com-tab-link">&gt;&gt;更多</a>-->
+        </ul>
+        <div class="com-tab-content">
+            <ul>
+                <li><a href="1.html" tabindex="-1"><img src="http://wapstatic.kf0309.3g.qq.com/reznov/component/img/01.jpg" alt="图片1" height="170" width="430"></a></li>
+                <li><a href="2.html" tabindex="-1"><img src="http://source1.qq.com/wsd/blank.png" data-src="http://appimg1.3g.qq.com/msoft/icon/zhuanti/heji3_600_200.jpg" alt="图片2" height="170" width="430"></a></li>
+                <li><a href="3.html" tabindex="-1"><img src="http://source1.qq.com/wsd/blank.png" data-src="http://appimg1.3g.qq.com/msoft/icon/zhuanti/3D630_200.jpg" alt="图片3" height="170" width="430"></a></li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="banner-prev" title="上一个">上一个</a>
+        <a href="javascript:;" class="banner-next" title="下一个">下一个</a>
+    </div>
 
 ##css
     .com-tab{
@@ -229,107 +229,89 @@
       </div>
       
     </div>
-    <div style="width:770px;" class="span4">
-      <h3>代码</h3>
-      <div class="tabbable" id="myTab">
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#tabs1" data-toggle="tab">html</a></li>
-                <li><a href="#tabs2" data-toggle="tab">css</a></li>
-                <li><a href="#tabs3" data-toggle="tab">javascript</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="tabs1">                  
-                  <pre class="prettyprint linenums Lang-html">
-&lt;div class=&quot;com-tab&quot; tabindex=&quot;0&quot; role=&quot;tablist&quot; aria-label=&quot;便民中心服务，按左右键
-          切换，按tab键切入内容区域，esc退出列表，alt+pageup上一个标签，alt+pagedown下一个标签&quot;&gt;
-    &lt;ul class=&quot;com-tab-listtitle&quot;&gt;
-        &lt;li class=&quot;com-tab-nownav&quot; role=&quot;tab&quot; aria-controls=&quot;panelA&quot; tabindex=&quot;0&quot;&gt;&lt;a href=&quot;1.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;选项卡一&lt;/a&gt;&lt;/li&gt;
-        &lt;li role=&quot;tab&quot; aria-controls=&quot;panelB&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;1.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;选项卡二&lt;/a&gt;&lt;/li&gt;
-        &lt;li role=&quot;tab&quot; aria-controls=&quot;panelC&quot; tabindex=&quot;-1&quot;&gt;&lt;a href=&quot;1.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;选项卡三&lt;/a&gt;&lt;/li&gt;
-        &lt;!--&lt;a href=&quot;aaa.html&quot; class=&quot;com-tab-link&quot;&gt;&amp;gt;&amp;gt;更多&lt;/a&gt;--&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;com-tab-content&quot;&gt;
-        &lt;ul&gt;
-            &lt;li role=&quot;tabpanel&quot; tabindex=&quot;0&quot; aria-label=&quot;进入内容区块&quot; id=&quot;panelA&quot;&gt;aaaaaaaaaaaaaa &lt;a href=&quot;javascript:;&quot;&gt;a模块&lt;/a&gt;111111&lt;/li&gt;
-            &lt;li role=&quot;tabpanel&quot; tabindex=&quot;0&quot; aria-label=&quot;进入内容区块&quot; id=&quot;panelB&quot;&gt;bbbbbbbbbbbbb&lt;a href=&quot;javascript:;&quot;&gt;b模块&lt;/a&gt;2222222&lt;/li&gt;
-            &lt;li role=&quot;tabpanel&quot; tabindex=&quot;0&quot; aria-label=&quot;进入内容区块&quot; id=&quot;panelC&quot;&gt;ccccccccccccccc&lt;a href=&quot;javascript:;&quot;&gt;c模块&lt;/a&gt;333333333&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;a href=&quot;javascript:;&quot; class=&quot;banner-prev&quot; title=&quot;上一个&quot;&gt;&lt;/a&gt;
-    &lt;a href=&quot;javascript:;&quot; class=&quot;banner-next&quot; title=&quot;下一个&quot;&gt;&lt;/a&gt;
-    &lt;a href=&quot;javascript:;&quot; id=&quot;tabs-esc&quot; class=&quot;hide-clip&quot;&gt;退出&lt;/a&gt;
-&lt;/div&gt;
-                  </pre>                  
-                </div>
-                <div class="tab-pane" id="tabs2">
-                  <pre class="prettyprint linenums Lang-css" style="height: 450px; overflow: auto;">
-.com-tab{
-  width:430px;
-  margin: 200px 0 0 300px;
-}
-.com-tab-listtitle{
-  overflow:hidden;
-  _zoom:1;
-}
-.com-tab-listtitle li{
-  float:left;
-  width:100px;
-  margin-right:40px;
-  background-color:#0F0;
-}
-.com-tab-listtitle li a{
-  display: block;
-}
-.com-tab-listtitle .com-tab-nownav{
-  background-color:#00F;
-}
-.com-tab-content{
-  margin-top:-1px;
-  position: relative;
-  height: 170px;
-  width: 430px;
-  overflow: hidden;
-}
-.com-tab-content li{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 170px;
-    width: 430px;
-}
-.com-tab-content .touch-style{
-    position: static;
-    float: left;
-}
-.hide-clip{
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-                  </pre>
-                </div>
-                <div class="tab-pane" id="tabs3">
-                  <pre class="prettyprint linenums Lang-js">
-1.需要调用jquery库
-2.需要调用公共函数库function.js(http://source1.qq.com/wsd/function-min.js)
-3.需要iscroll库（增加手势操作,http://source1.qq.com/wsd/iscroll.js）
-4.$.fn.tab({
-            tab : 'com-tab',
-            plist : 'com-tab-listtitle',
-            listafter : 'com-tab-nownav',
-            pcontent : 'com-tab-content'
-});
-                  </pre>
-                </div>
-              </div>
-            </div>
+
+##html
+    <div class="com-tab" tabindex="0" role="tablist" aria-label="便民中心服务，按左右键
+          切换，按tab键切入内容区域，esc退出列表，alt+pageup上一个标签，alt+pagedown下一个标签">
+        <ul class="com-tab-listtitle">
+            <li class="com-tab-nownav" role="tab" aria-controls="panelA" tabindex="0"><a href="1.html" target="_blank" tabindex="-1">选项卡一</a></li>
+            <li role="tab" aria-controls="panelB" tabindex="-1"><a href="1.html" target="_blank" tabindex="-1">选项卡二</a></li>
+            <li role="tab" aria-controls="panelC" tabindex="-1"><a href="1.html" target="_blank" tabindex="-1">选项卡三</a></li>
+            <!--<a href="aaa.html" class="com-tab-link">&gt;&gt;更多</a>-->
+        </ul>
+        <div class="com-tab-content">
+            <ul>
+                <li role="tabpanel" tabindex="0" aria-label="进入内容区块" id="panelA">aaaaaaaaaaaaaa <a href="javascript:;">a模块</a>111111</li>
+                <li role="tabpanel" tabindex="0" aria-label="进入内容区块" id="panelB">bbbbbbbbbbbbb<a href="javascript:;">b模块</a>2222222</li>
+                <li role="tabpanel" tabindex="0" aria-label="进入内容区块" id="panelC">ccccccccccccccc<a href="javascript:;">c模块</a>333333333</li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="banner-prev" title="上一个"></a>
+        <a href="javascript:;" class="banner-next" title="下一个"></a>
+        <a href="javascript:;" id="tabs-esc" class="hide-clip">退出</a>
     </div>
-  </div>
+
+##css
+    .com-tab{
+      width:430px;
+      margin: 200px 0 0 300px;
+    }
+    .com-tab-listtitle{
+      overflow:hidden;
+      _zoom:1;
+    }
+    .com-tab-listtitle li{
+      float:left;
+      width:100px;
+      margin-right:40px;
+      background-color:#0F0;
+    }
+    .com-tab-listtitle li a{
+      display: block;
+    }
+    .com-tab-listtitle .com-tab-nownav{
+      background-color:#00F;
+    }
+    .com-tab-content{
+      margin-top:-1px;
+      position: relative;
+      height: 170px;
+      width: 430px;
+      overflow: hidden;
+    }
+    .com-tab-content li{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 170px;
+        width: 430px;
+    }
+    .com-tab-content .touch-style{
+        position: static;
+        float: left;
+    }
+    .hide-clip{
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        padding:0 !important;
+        border:0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+    }
+                  
+##js
+    1.需要调用jquery库
+    2.需要调用公共函数库function.js(http://source1.qq.com/wsd/function-min.js)
+    3.需要iscroll库（增加手势操作,http://source1.qq.com/wsd/iscroll.js）
+    4.$.fn.tab({
+                tab : 'com-tab',
+                plist : 'com-tab-listtitle',
+                listafter : 'com-tab-nownav',
+                pcontent : 'com-tab-content'
+    });
+
 </section>
 
 
@@ -359,28 +341,17 @@
           </div>
       </div>
     </div>
-    <div style="width:770px;" class="span4">
-      <h3>代码</h3>
-      <div class="tabbable" id="myTab">
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#pop-win1" data-toggle="tab">html</a></li>
-                <li><a href="#pop-win2" data-toggle="tab">css</a></li>
-                <li><a href="#pop-win3" data-toggle="tab">javascript</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="pop-win1">                  
-                  <pre class="prettyprint linenums Lang-html">
-&lt;a href=&quot;javascript:;&quot; class=&quot;com-click1&quot; aria-label=&quot;按回车展开浮出层&quot; aria-haspopup=&quot;true&quot;&gt;我是触发弹出窗口的链接&lt;/a&gt;
-&lt;div class=&quot;com-mask&quot;&gt;&lt;/div&gt;<br>
-&lt;div class=&quot;com-popwin1&quot; role=&quot;dialog&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;dialog-title&quot;&gt;<br>
-  &lt;h2 id=&quot;dialog-title&quot; class=&quot;hide-clip&quot;&gt;活动规则&lt;/h2&gt;<br>
-  &lt;a class=&quot;com-popclose&quot; href=&quot;javascript:;&quot; title=&quot;关闭弹窗&quot;&gt;&amp;times;&lt;/a&gt;<br>
-  &lt;p&gt;我是弹窗1&lt;/p&gt;<br>
-&lt;/div&gt;
-                  </pre>                  
-                </div>
-                <div class="tab-pane" id="pop-win2">
-                  <pre class="prettyprint linenums Lang-css">
+ 
+##html
+    <a href="javascript:;" class="com-click1" aria-label="按回车展开浮出层" aria-haspopup="true">我是触发弹出窗口的链接</a>
+    <div class="com-mask"></div><br>
+    <div class="com-popwin1" role="dialog" tabindex="-1" aria-labelledby="dialog-title"><br>
+      <h2 id="dialog-title" class="hide-clip">活动规则</h2><br>
+      <a class="com-popclose" href="javascript:;" title="关闭弹窗">&times;</a><br>
+      <p>我是弹窗1</p><br>
+    </div>
+
+##css
 .com-popwin1{
     width:300px;
     height:300px;
@@ -413,26 +384,18 @@
     text-align:center;
     text-decoration:none;
 }
-                  </pre>
-                </div>
-                <div class="tab-pane" id="pop-win3">
-                  <pre class="prettyprint linenums Lang-js">
-1.需要调用jquery库
-2.需要调用公共函数库function.js
-3.$.fn.popwin({
-        aclassName : 'com-click1',
-        wclassName : 'com-popwin1',
-        pclose : 'com-popclose',
-        opactiy : 0.5,
-        mask : 'com-mask',
-        maskclick : false
-  });
-                  </pre>
-                </div>
-              </div>
-            </div>
-    </div>
-  </div>
+
+##js
+    1.需要调用jquery库
+    2.需要调用公共函数库function.js
+    3.$.fn.popwin({
+            aclassName : 'com-click1',
+            wclassName : 'com-popwin1',
+            pclose : 'com-popclose',
+            opactiy : 0.5,
+            mask : 'com-mask',
+            maskclick : false
+      });
 </section>
 
 
@@ -521,7 +484,7 @@
       <div>1. img图片链接。</div>
       <pre class="prettyprint linenums Lang-html">&lt;a href=&quot;url&quot;&gt;<br>
     &lt;img src=&quot;img/icon_72.png&quot; alt=&quot;水果忍者&quot; title=&quot;水果忍者&quot; width=&quot;57&quot; height=&quot;57&quot;/&gt;<br>
-&lt;/a&gt;</pre>
+    &lt;/a&gt;</pre>
       <div>
           <a href="url">
               <img src="img/icon_72.png" alt="水果忍者" title="水果忍者" width="57" height="57"/>
