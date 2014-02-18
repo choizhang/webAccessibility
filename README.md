@@ -19,17 +19,17 @@
     <h1>Landmark roles</h1>
   </div>
   <div>
-    <div>
-      <img src="img/landmark.jpg" alt="" height="968" width="965">
-      <h3>作用</h3>
-      <p>视障用户只要使用屏幕阅读器的快捷键（如NVDA按快捷键d）即可在页面地标间导航。</p>
-      <h4>为什么需要在地标间导航？</h4>
-      <p>因为一个网站中的每个页面都很多共同的部分，其实用户并不需要每次进入一个网站就从头听到尾(视障用户是不用鼠标的)，这个功能可以将页面分为几个部分，一般变化的是其中role="main"的区域</p>
-      <h4>用法</h4>
-      <div>
-          <p>目前支持banner, complementary, contentinfo, form, main, navigation, search，region（部分支持）</p>
-          <div>
-            <pre class="prettyprint linenums Lang-css">
+<div>
+  <img src="img/landmark.jpg" alt="" height="968" width="965">
+  <h3>作用</h3>
+  <p>视障用户只要使用屏幕阅读器的快捷键（如NVDA按快捷键d）即可在页面地标间导航。</p>
+  <h4>为什么需要在地标间导航？</h4>
+  <p>因为一个网站中的每个页面都很多共同的部分，其实用户并不需要每次进入一个网站就从头听到尾(视障用户是不用鼠标的)，这个功能可以将页面分为几个部分，一般变化的是其中role="main"的区域</p>
+  <h4>用法</h4>
+  <div>
+  <p>目前支持banner, complementary, contentinfo, form, main, navigation, search，region（部分支持）</p>
+  <div>
+            
     <div role="banner" aria-label="广告区块" tabindex="0"></div><br>
     <div role="contentinfo" aria-label="补充内容区块" tabindex="0"></div><br>
     <header role="banner" aria-label="广告区块" tabindex="0"></header><br>
@@ -39,16 +39,16 @@
       <h3 id="modheader">Module Header</h3> <br>
       <div>Module content</div> <br>
     </div>
-            </pre>
-          </div>
-      </div>
-      
-      <h4>补充</h4>
-      <p>1. 其中的banner，navigation，complementary，contentinfo建议跟html5里面的header，nav，aside，footer对应。</p>
-      <p>2. 上面代码中最后一个（region）是表示一个模块。p</p>
-      <p>3. 个人感觉这个属性是一个大致的对应，并没有那么精确，只要保证整个网站布局一致即可。</p>
-      <p>4. landmark roles目前的<a href="jhttp://webaim.org/projects/screenreadersurvey4/#landmarks">普及率</a>还不是很高，大部分的屏幕阅读器用户使用页面标题进行导航，使用键盘快捷键，从一个跳到另外一个。所以合理的html outline是非常有必要的。</p>
-    </div>
+    
+</div>
+  </div>
+  
+  <h4>补充</h4>
+  <p>1. 其中的banner，navigation，complementary，contentinfo建议跟html5里面的header，nav，aside，footer对应。</p>
+  <p>2. 上面代码中最后一个（region）是表示一个模块。p</p>
+  <p>3. 个人感觉这个属性是一个大致的对应，并没有那么精确，只要保证整个网站布局一致即可。</p>
+  <p>4. landmark roles目前的<a href="jhttp://webaim.org/projects/screenreadersurvey4/#landmarks">普及率</a>还不是很高，大部分的屏幕阅读器用户使用页面标题进行导航，使用键盘快捷键，从一个跳到另外一个。所以合理的html outline是非常有必要的。</p>
+</div>
   </div>
 </section>
 
@@ -227,8 +227,6 @@
           </div>
           <p><a href="http://choizhang.com/images/tabs/a.html" target="_blank">无障碍的tabs例子</a></p>
       </div>
-      
-    </div>
 
 ##html
     <div class="com-tab" tabindex="0" role="tablist" aria-label="便民中心服务，按左右键
@@ -352,38 +350,38 @@
     </div>
 
 ##css
-.com-popwin1{
-    width:300px;
-    height:300px;
-    background-color:#FF3;
-    position:absolute;
-    z-index:99;
-    left:50%;
-    margin-left:-150px; /* 这个数值是弹窗宽度的一半，用CSS来实现左右居中对齐*/
-    top:300px;
-    display:none;
-    line-height:30px;
-}
-.com-mask{
-    height:100%;
-    width:100%;
-    background:#000;
-    position:absolute;
-    z-index:9;
-    left:0;
-    top:0;
-    display:none;
-}
-.com-popclose{
-    display:block;
-    float:right;
-    height:30px;
-    width:30px;
-    background-color:#9F6;
-    line-height:30px;
-    text-align:center;
-    text-decoration:none;
-}
+    .com-popwin1{
+        width:300px;
+        height:300px;
+        background-color:#FF3;
+        position:absolute;
+        z-index:99;
+        left:50%;
+        margin-left:-150px; /* 这个数值是弹窗宽度的一半，用CSS来实现左右居中对齐*/
+        top:300px;
+        display:none;
+        line-height:30px;
+    }
+    .com-mask{
+        height:100%;
+        width:100%;
+        background:#000;
+        position:absolute;
+        z-index:9;
+        left:0;
+        top:0;
+        display:none;
+    }
+    .com-popclose{
+        display:block;
+        float:right;
+        height:30px;
+        width:30px;
+        background-color:#9F6;
+        line-height:30px;
+        text-align:center;
+        text-decoration:none;
+    }
 
 ##js
     1.需要调用jquery库
@@ -434,9 +432,9 @@
           <p>在win7里面控制面板个性化设置里面可以选择设置高对比度模式</p>
       </div>
       
-      <h4>补充</h4>
-      <p>1. 一般在网站logo和菜单导航建议使用这种方式。</p>
-    </div>
+  <h4>补充</h4>
+  <p>1. 一般在网站logo和菜单导航建议使用这种方式。</p>
+</div>
   </div>
 </section>
 
@@ -482,16 +480,16 @@
       </div>
       <h3>图片链接</h3>
       <div>1. img图片链接。</div>
-      <pre class="prettyprint linenums Lang-html">&lt;a href=&quot;url&quot;&gt;<br>
-    &lt;img src=&quot;img/icon_72.png&quot; alt=&quot;水果忍者&quot; title=&quot;水果忍者&quot; width=&quot;57&quot; height=&quot;57&quot;/&gt;<br>
-    &lt;/a&gt;</pre>
+    &lt;a href=&quot;url&quot;&gt;<br>
+        &lt;img src=&quot;img/icon_72.png&quot; alt=&quot;水果忍者&quot; title=&quot;水果忍者&quot; width=&quot;57&quot; height=&quot;57&quot;/&gt;<br>
+    &lt;/a&gt;
       <div>
           <a href="url">
               <img src="img/icon_72.png" alt="水果忍者" title="水果忍者" width="57" height="57"/>
           </a>
       </div><br><br>
       <div>1. css背景图片链接。如果图片不能准确表达含义的需要用titie进行提示，否则不需要title</div>
-      <style type="text/css">
+
           .add-comment{
               display: block;
               width: 144px;
@@ -502,7 +500,7 @@
               position: relative;
               z-index: -1;
           }
-      </style>  
+          
       <pre class="prettyprint linenums Lang-html">
 &lt;a class=&quot;add-comment&quot; href=&quot;url&quot; title=&quot;添加评论&quot;&gt;<br>
     &lt;span class=&quot;hide-bgtext&quot;&gt;添加评论&lt;/span&gt;<br>
