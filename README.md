@@ -1,14 +1,14 @@
-<img src="img/light.jpg" alt="" height="100" width="100%">
+<img src="img/light.jpg" alt="" height="150" width="100%">
 <section id="buttonGroups">
   <div class="page-header">
-    <h1><a href="http://baike.baidu.com/view/1271302.htm" target="_blank">读屏软件</a></h1>
+    <h1>说明</h1>
   </div>
   <div>
     <div>
-      <h3>现状</h3>
-      <p>1. 国内的用户使用争渡，永德读屏软件的占大多数，国外主要是jaws，nvda，但是上面4个只有nvda是开源免费的。</p>
+      <p>1. 国内的用户使用争渡，永德<a href="http://baike.baidu.com/view/1271302.htm" target="_blank">读屏软件</a>的占大多数，国外主要是jaws，nvda，但是上面4个只有nvda是开源免费的。</p>
       <p>2. 在公司一般做测试是使用<a href="http://www.nvda-project.org/" target="_blank">NVDA</a>，每个读屏软件应该都有一些差异，在这就不纠结了（重构的童鞋，你懂的！）</p>
-      <p>3. 在目前的情况下，做一些力所能及的努力吧。勿以善小而不为!</p>
+      <p>3. 在每个模块标题里面含有"（组）"的都是已经包含在组件库里面了!</p>
+      <p>4. 在目前的情况下，做一些力所能及的努力吧。勿以善小而不为!</p>
     </div>
   </div>
 </section>
