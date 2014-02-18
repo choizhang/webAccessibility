@@ -28,22 +28,21 @@
   <h4>用法</h4>
   <div>
   <p>目前支持banner, complementary, contentinfo, form, main, navigation, search，region（部分支持）</p>
-  <div>
-            
-    <div role="banner" aria-label="广告区块" tabindex="0"></div><br>
-    <div role="contentinfo" aria-label="补充内容区块" tabindex="0"></div><br>
-    <header role="banner" aria-label="广告区块" tabindex="0"></header><br>
-    <nav role="navigation" aria-label="导航区块" tabindex="0"></nav><br>
-    <div role="main" aria-label="主体区块" tabindex="0"></div><br>
-    <div role="region" aria-label="XX模块" tabindex="0" aria-labelledby="modheader"> <br>
-      <h3 id="modheader">Module Header</h3> <br>
-      <div>Module content</div> <br>
-    </div>
-    
-</div>
-  </div>
+
+<pre>
+&lt;div role=&quot;banner&quot; aria-label=&quot;广告区块&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;
+&lt;div role=&quot;contentinfo&quot; aria-label=&quot;补充内容区块&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;
+&lt;header role=&quot;banner&quot; aria-label=&quot;广告区块&quot; tabindex=&quot;0&quot;&gt;&lt;/header&gt;
+&lt;nav role=&quot;navigation&quot; aria-label=&quot;导航区块&quot; tabindex=&quot;0&quot;&gt;&lt;/nav&gt;
+&lt;div role=&quot;main&quot; aria-label=&quot;主体区块&quot; tabindex=&quot;0&quot;&gt;&lt;/div&gt;
+&lt;div role=&quot;region&quot; aria-label=&quot;XX模块&quot; tabindex=&quot;0&quot; aria-labelledby=&quot;modheader&quot;&gt;
+  &lt;h3 id=&quot;modheader&quot;&gt;Module Header&lt;/h3&gt;
+  &lt;div&gt;Module content&lt;/div&gt;
+&lt;/div&gt;
+</pre>
   
   <h4>补充</h4>
+  <div role="banner" aria-label="广告区块" tabindex="0"></div>
   <p>1. 其中的banner，navigation，complementary，contentinfo建议跟html5里面的header，nav，aside，footer对应。</p>
   <p>2. 上面代码中最后一个（region）是表示一个模块。p</p>
   <p>3. 个人感觉这个属性是一个大致的对应，并没有那么精确，只要保证整个网站布局一致即可。</p>
@@ -489,7 +488,6 @@
           </a>
       </div><br><br>
       <div>1. css背景图片链接。如果图片不能准确表达含义的需要用titie进行提示，否则不需要title</div>
-
           .add-comment{
               display: block;
               width: 144px;
@@ -501,7 +499,7 @@
               z-index: -1;
           }
           
-      <pre class="prettyprint linenums Lang-html">
+<pre class="prettyprint linenums Lang-html">
 &lt;a class=&quot;add-comment&quot; href=&quot;url&quot; title=&quot;添加评论&quot;&gt;<br>
     &lt;span class=&quot;hide-bgtext&quot;&gt;添加评论&lt;/span&gt;<br>
 &lt;/a&gt;
@@ -649,16 +647,3 @@ a:active{outline:none;}  正确
 </div>
 
 <div><a href="http://www.qq.com/accessibility/">腾讯网无障碍说明</a></div>
-<footer class="footer">
-  <p><a href="http://mxd.tencent.com/" target="_blank">MXD重构组</a></p>
-</footer>
-<script src="js/jquery.min.js"></script>
-<script type="text/javascript" src="google-code-prettify/prettify.js"></script>
-<script language="javascript" src="js/bootstrap-tab.js" charset="utf-8"></script>
- <script>
-    $(document).ready(function(){
-         prettyPrint();
-    })
-</script>       
-    </body>
-</html>
