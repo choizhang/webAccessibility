@@ -1,111 +1,4 @@
-
-        <div class="navbar navbar-fixed-top">
-              <div class="navbar-inner">
-                <div class="container">
-                  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="brand" href="#">无障碍规范</a>
-                  <div class="nav-collapse collapse">
-                    <ul class="nav">
-                      <li class="active">
-                        <a href="#landmark">landmark roles</a>
-                      </li>
-                      <li><a href="#second-menu">二级菜单</a></li>
-                      <li><a href="#tabs">tabs</a></li>
-                      <li><a href="#pop-win">弹出窗口</a></li>
-                      <li><a href="#hide-clip">文字隐藏</a></li>
-                      <li><a href="#high-rate">高对比度模式</a></li>
-                      <li><a href="#tabindex">tabindex</a></li>
-                      <li><a href="#link">链接</a></li>
-                      <li><a href="#form">表单</a></li>
-                      <li><a href="#table">表格</a></li>
-                      <li><a href="#accesskey">快捷键</a></li>
-                      <li><a href="#language">语言</a></li>
-                      <li><a href="#focus">虚线框</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="container">
-
 <img src="img/light.jpg" alt="" height="100" width="100%">
-<!-- <section id="buttonGroups">
-  <div class="page-header">
-    <h1>布局模版 <small>11</small></h1>
-  </div>
-  <div class="row">
-    <div class="span4">
-      <h3>两栏布局</h3>
-      <p>图</p>
-      <h3>三栏布局</h3>
-      <p>图</p>
-    </div>
-    <div style="width:770px;" class="span4">
-      <h3>代码</h3>
-      <div class="tabbable" id="myTab">
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#landmarkrole1" data-toggle="tab">html</a></li>
-                <li><a href="#landmarkrole2" data-toggle="tab">css</a></li>
-                <li><a href="#landmarkrole3" data-toggle="tab">javascript</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="landmarkrole1">
-                  
-                    <pre class="prettyprint linenums Lang-html">
-&lt;div class=&quot;common-btn&quot;&gt;<br>
-&lt;a class=&quot;prev prevdis&quot; href=&quot;javascript:void(0);&quot;&gt;<br>
-&lt;span class=&quot;prev-disable&quot;&gt;&lt;/span&gt;<br>
-&lt;span class=&quot;prev-normal&quot;&gt;&lt;/span&gt;<br>
-&lt;/a&gt;<br>
-&lt;a class=&quot;next&quot; href=&quot;javascript:javascript:void(0);&quot;&gt;<br>
-&lt;span class=&quot;next-disable&quot;&gt;&lt;/span&gt;<br>
-&lt;span class=&quot;next-normal&quot;&gt;&lt;/span&gt;<br>
-&lt;/a&gt;<br>
-&lt;/div&gt;
-                  </pre>
-                  
-                  
-                </div>
-                <div class="tab-pane" id="landmarkrole2">
-                  <pre class="prettyprint linenums Lang-css">
-.common-btn{
-    position: relative;
-    height: 50px;
-    width: 100px;
-}
-.common-btn .prev{
-    position: absolute;
-    left: 17px;
-    top: 10px;
-}
-.common-btn .next{
-    position: absolute;
-    right: 19px;
-    top: 10px;
-}
-                  </pre>
-                </div>
-                <div class="tab-pane" id="landmarkrole3">
-                  <pre class="prettyprint linenums Lang-js">
-$.fn.lamp({
-    targetUl : 'com-lamp-ul',
-    height : 22,
-    originTop : 3,
-    showitem : 6,
-    time : 2000
-});
-                  </pre>
-                </div>
-              </div>
-            </div>
-    </div>
-  </div>
-</section> -->
-
 <section id="buttonGroups">
   <div class="page-header">
     <h1><a href="http://baike.baidu.com/view/1271302.htm" target="_blank">读屏软件</a></h1>
@@ -175,76 +68,47 @@ $.fn.lamp({
             <p class="paragrap">2.在第二次tab到二级菜单的时候，可以按回车打开这个菜单链接</p> 
           </div>
           <p><a href="second-menu/index.html" target="_blank">无障碍的二级菜单demo例子</a></p>
-      </div>
-      
-    </div>
-    <div style="width:770px;" class="span4">
-      <h3>代码</h3>
-      <div class="tabbable" id="myTab">
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#second-menu1" data-toggle="tab">html</a></li>
-                <li><a href="#second-menu2" data-toggle="tab">css</a></li>
-                <li><a href="#second-menu3" data-toggle="tab">javascript</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="second-menu1">                  
-                  <pre class="prettyprint linenums Lang-html">
-&lt;div role=&quot;navigation&quot;&gt;<br>
-&lt;ul role=&quot;menubar&quot; class=&quot;menubar&quot;&gt;<br>
-&lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;tt&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; aria-label=&quot;QQ特权菜单，下键打开菜单，ESC关闭&quot; class=&quot;pop-menu pop-menu1&quot;&gt;<br>
-&lt;a href=&quot;javascript:;&quot;&gt;QQ特权&lt;/a&gt;<br>
-&lt;ul role=&quot;menu&quot; aria-hidden=&quot;true&quot;&gt;<br>
-&lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;移动专区&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;安全专区&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;网页专区&lt;/a&gt;&lt;/li&gt;<br>
-&lt;/ul&gt;<br>
-&lt;/li&gt;<br>
-&lt;li role=&quot;menuitem&quot; tabindex=&quot;-1&quot; aria-haspopup=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;tt tt1&quot;&gt;游戏特权&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; aria-label=&quot;生活特权菜单，下键打开菜单，ESC关闭&quot; class=&quot;pop-menu pop-menu2&quot;&gt;<br>
-&lt;a href=&quot;javascript:;&quot;&gt;生活特权&lt;/a&gt;<br>
-&lt;ul role=&quot;menu&quot; aria-hidden=&quot;true&quot;&gt;<br>
-&lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;移动专区&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;安全专区&lt;/a&gt;&lt;/li&gt;<br>
-&lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;网页专区&lt;/a&gt;&lt;/li&gt;<br>
-&lt;/ul&gt;<br>
-&lt;/li&gt;<br>
-&lt;/ul&gt;<br>
-&lt;/div&gt;
-                  </pre>                  
-                </div>
-                <div class="tab-pane" id="second-menu2">
-                  <pre class="prettyprint linenums Lang-css">
 
-                  </pre>
-                </div>
-                <div class="tab-pane" id="second-menu3">
-                  <pre class="prettyprint linenums Lang-js">
-1.需要调用jquery库
-2.需要调用公共函数库function.js
-3.$.fn.second_menu({
-    target_ele: '.pop-menu1',    //二级菜单的li的类名
-    target_next: '.tt'           //二级菜单前后失去焦点的元素
-  });
-  $.fn.second_menu({
-    target_ele: '.pop-menu2',    //二级菜单的li的类名
-    target_next: '.tt1'          //二级菜单前后失去焦点的元素
-  });
-                  </pre>
-                </div>
-              </div>
-            </div>
-    </div>
-  </div>
+##html
+    &lt;div role=&quot;navigation&quot;&gt;<br>
+    &lt;ul role=&quot;menubar&quot; class=&quot;menubar&quot;&gt;<br>
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;tt&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; aria-label=&quot;QQ特权菜单，下键打开菜单，ESC关闭&quot; class=&quot;pop-menu pop-menu1&quot;&gt;<br>
+    &lt;a href=&quot;javascript:;&quot;&gt;QQ特权&lt;/a&gt;<br>
+    &lt;ul role=&quot;menu&quot; aria-hidden=&quot;true&quot;&gt;<br>
+    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;移动专区&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;安全专区&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;网页专区&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+    &lt;/li&gt;<br>
+    &lt;li role=&quot;menuitem&quot; tabindex=&quot;-1&quot; aria-haspopup=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot; class=&quot;tt tt1&quot;&gt;游戏特权&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot; tabindex=&quot;0&quot; aria-label=&quot;生活特权菜单，下键打开菜单，ESC关闭&quot; class=&quot;pop-menu pop-menu2&quot;&gt;<br>
+    &lt;a href=&quot;javascript:;&quot;&gt;生活特权&lt;/a&gt;<br>
+    &lt;ul role=&quot;menu&quot; aria-hidden=&quot;true&quot;&gt;<br>
+    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;移动专区&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;安全专区&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;li role=&quot;menuitemradio&quot; aria-checked=&quot;false&quot;&gt;&lt;a href=&quot;javascript:;&quot;&gt;网页专区&lt;/a&gt;&lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+    &lt;/li&gt;<br>
+    &lt;/ul&gt;<br>
+    &lt;/div&gt;
+    
+##js
+    1.需要调用jquery库
+    2.需要调用公共函数库function.js
+    3.$.fn.second_menu({
+        target_ele: '.pop-menu1',    //二级菜单的li的类名
+        target_next: '.tt'           //二级菜单前后失去焦点的元素
+      });
+      $.fn.second_menu({
+        target_ele: '.pop-menu2',    //二级菜单的li的类名
+        target_next: '.tt1'          //二级菜单前后失去焦点的元素
+      });
 </section>
 
 
-<section id="buttonGroups">
-  <a name="banner"></a>
-  <div class="page-header">
-    <h1>banner<em>（组）</em></h1>
-  </div>
-  <div class="row" style="height: 620px;">
+
+#<h1>banner<em>（组）</em></h1>
     <div class="span4">
       <h3>作用</h3>
       <p>满足键盘用户和视障用户对banner模块的正确使用</p>
@@ -261,104 +125,85 @@ $.fn.lamp({
       </div>
       
     </div>
-    <div style="width:770px;" class="span4">
-      <h3>代码</h3>
-      <div class="tabbable" id="myTab">
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#banners1" data-toggle="tab">html</a></li>
-                <li><a href="#banner2" data-toggle="tab">css</a></li>
-                <li><a href="#banner3" data-toggle="tab">javascript</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="banner1">                  
-                  <pre class="prettyprint linenums Lang-html">
-&lt;div class=&quot;com-tab&quot;&gt;
-    &lt;ul class=&quot;com-tab-listtitle&quot;&gt;
-        &lt;li class=&quot;com-tab-nownav&quot; data-url=&quot;1.html&quot; tabindex=&quot;0&quot;&gt;&lt;a href=&quot;1.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片1&lt;/a&gt;&lt;/li&gt;
-        &lt;li tabindex=&quot;0&quot; data-url=&quot;2.html&quot;&gt;&lt;a href=&quot;2.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片2&lt;/a&gt;&lt;/li&gt;
-        &lt;li tabindex=&quot;0&quot; data-url=&quot;3.html&quot;&gt;&lt;a href=&quot;3.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片3&lt;/a&gt;&lt;/li&gt;
-        &lt;!--&lt;a href=&quot;aaa.html&quot; class=&quot;com-tab-link&quot;&gt;&amp;gt;&amp;gt;更多&lt;/a&gt;--&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;com-tab-content&quot;&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&quot;1.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://wapstatic.kf0309.3g.qq.com/reznov/component/img/01.jpg&quot; alt=&quot;图片1&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;2.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://source1.qq.com/wsd/blank.png&quot; data-src=&quot;http://appimg1.3g.qq.com/msoft/icon/zhuanti/heji3_600_200.jpg&quot; alt=&quot;图片2&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;3.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://source1.qq.com/wsd/blank.png&quot; data-src=&quot;http://appimg1.3g.qq.com/msoft/icon/zhuanti/3D630_200.jpg&quot; alt=&quot;图片3&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                 
+##html
+    &lt;div class=&quot;com-tab&quot;&gt;
+        &lt;ul class=&quot;com-tab-listtitle&quot;&gt;
+            &lt;li class=&quot;com-tab-nownav&quot; data-url=&quot;1.html&quot; tabindex=&quot;0&quot;&gt;&lt;a href=&quot;1.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片1&lt;/a&gt;&lt;/li&gt;
+            &lt;li tabindex=&quot;0&quot; data-url=&quot;2.html&quot;&gt;&lt;a href=&quot;2.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片2&lt;/a&gt;&lt;/li&gt;
+            &lt;li tabindex=&quot;0&quot; data-url=&quot;3.html&quot;&gt;&lt;a href=&quot;3.html&quot; target=&quot;_blank&quot; tabindex=&quot;-1&quot;&gt;图片3&lt;/a&gt;&lt;/li&gt;
+            &lt;!--&lt;a href=&quot;aaa.html&quot; class=&quot;com-tab-link&quot;&gt;&amp;gt;&amp;gt;更多&lt;/a&gt;--&gt;
         &lt;/ul&gt;
+        &lt;div class=&quot;com-tab-content&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;1.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://wapstatic.kf0309.3g.qq.com/reznov/component/img/01.jpg&quot; alt=&quot;图片1&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;2.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://source1.qq.com/wsd/blank.png&quot; data-src=&quot;http://appimg1.3g.qq.com/msoft/icon/zhuanti/heji3_600_200.jpg&quot; alt=&quot;图片2&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;3.html&quot; tabindex=&quot;-1&quot;&gt;&lt;img src=&quot;http://source1.qq.com/wsd/blank.png&quot; data-src=&quot;http://appimg1.3g.qq.com/msoft/icon/zhuanti/3D630_200.jpg&quot; alt=&quot;图片3&quot; height=&quot;170&quot; width=&quot;430&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;a href=&quot;javascript:;&quot; class=&quot;banner-prev&quot; title=&quot;上一个&quot;&gt;上一个&lt;/a&gt;
+        &lt;a href=&quot;javascript:;&quot; class=&quot;banner-next&quot; title=&quot;下一个&quot;&gt;下一个&lt;/a&gt;
     &lt;/div&gt;
-    &lt;a href=&quot;javascript:;&quot; class=&quot;banner-prev&quot; title=&quot;上一个&quot;&gt;上一个&lt;/a&gt;
-    &lt;a href=&quot;javascript:;&quot; class=&quot;banner-next&quot; title=&quot;下一个&quot;&gt;下一个&lt;/a&gt;
-&lt;/div&gt;
-                  </pre>                  
-                </div>
-                <div class="tab-pane" id="banner2">
-                  <pre class="prettyprint linenums Lang-css" style="height: 450px; overflow: auto;">
-.com-tab{
-  width:430px;
-}
-.com-tab-listtitle{
-  overflow:hidden;
-  _zoom:1;
-}
-.com-tab-listtitle li{
-  float:left;
-  width:100px;
-  margin-right:40px;
-  background-color:#0F0;
-}
-.com-tab-listtitle .com-tab-nownav{
-  background-color:#00F;
-}
-.com-tab-content{
-  margin-top:-1px;
-  position: relative;
-  height: 170px;
-  width: 430px;
-  overflow: hidden;
-}
-.com-tab-content li{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 170px;
-    width: 430px;
-}
-.com-tab-content .touch-style{
-    position: static;
-    float: left;
-}
-.banner-prev{
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100px;
-}
-.banner-next{
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 100px;
-}
-                  </pre>
-                </div>
-                <div class="tab-pane" id="banner3">
-                  <pre class="prettyprint linenums Lang-js">
-1.需要调用jquery库
-2.需要调用公共函数库function.js(http://source1.qq.com/wsd/function-min.js)
-3.需要iscroll库（增加手势操作,http://source1.qq.com/wsd/iscroll.js）
-4.$.fn.tab({
-            tab : 'com-tab',
-            plist : 'com-tab-listtitle',
-            listafter : 'com-tab-nownav',
-            pcontent : 'com-tab-content',
-            type : 'fade'
-});
-                  </pre>
-                </div>
-              </div>
-            </div>
-    </div>
-  </div>
+
+##css
+    .com-tab{
+      width:430px;
+    }
+    .com-tab-listtitle{
+      overflow:hidden;
+      _zoom:1;
+    }
+    .com-tab-listtitle li{
+      float:left;
+      width:100px;
+      margin-right:40px;
+      background-color:#0F0;
+    }
+    .com-tab-listtitle .com-tab-nownav{
+      background-color:#00F;
+    }
+    .com-tab-content{
+      margin-top:-1px;
+      position: relative;
+      height: 170px;
+      width: 430px;
+      overflow: hidden;
+    }
+    .com-tab-content li{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 170px;
+        width: 430px;
+    }
+    .com-tab-content .touch-style{
+        position: static;
+        float: left;
+    }
+    .banner-prev{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100px;
+    }
+    .banner-next{
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 100px;
+    }
+##js
+    1.需要调用jquery库
+    2.需要调用公共函数库function.js(http://source1.qq.com/wsd/function-min.js)
+    3.需要iscroll库（增加手势操作,http://source1.qq.com/wsd/iscroll.js）
+    4.$.fn.tab({
+                tab : 'com-tab',
+                plist : 'com-tab-listtitle',
+                listafter : 'com-tab-nownav',
+                pcontent : 'com-tab-content',
+                type : 'fade'
+    });
+
 </section>
 
 
