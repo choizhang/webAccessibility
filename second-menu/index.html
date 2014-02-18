@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		ul{
+			list-style: none;
+		}
+		.menubar{
+			position: relative;
+			width: 400px;
+			margin: 300px auto;
+		}
+		.menubar li{
+			float: left;
+		}
+		.menubar li a{
+			display: block;
+			height: 20px;
+			width: 85px;
+			text-align: center;
+			text-decoration: none;
+			background-color: #CCC;
+		}
+		.pop-menu li{
+			float: none;
+		}
+		.pop-menu li a{
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+		.pop-menu ul{
+			display: none;
+			position: absolute;
+			left: 86px;
+			top: 20px;
+		}
+		.pop-menu2 ul{
+			left: 255px;
+		}
+		.menubar li a:hover, .menubar li a:focus{
+			background-color: #FCD;
+		}
+		.pop-menu:hover ul{
+			display: block;
+		}
+	</style>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="http://source1.qq.com/wsd/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div><a href="javascript:;">之前的内容</a></div>
+
+<div role="navigation">
+	<ul role="menubar" class="menubar">
+	  <li role="menuitem" aria-haspopup="false"><a href="javascript:;" class="tt">首页</a></li>
+	  <li role="menuitem" aria-haspopup="true" tabindex="0" aria-label="QQ特权菜单，下键打开菜单，ESC关闭" class="pop-menu pop-menu1">
+	  	<a href="javascript:;">QQ特权</a>
+	    <ul role="menu" aria-hidden="true">
+	      <li role="menuitemradio" aria-checked="false"><a href="javascript:;">移动专区</a></li>
+	      <li role="menuitemradio" aria-checked="false"><a href="javascript:;">安全专区</a></li>
+	      <li role="menuitemradio" aria-checked="false"><a href="javascript:;">网页专区</a></li>
+	    </ul>
+	  </li>
+	  <li role="menuitem" tabindex="-1" aria-haspopup="false"><a href="javascript:;" class="tt tt1">游戏特权</a></li>
+	  <li role="menuitem" aria-haspopup="true" tabindex="0" aria-label="生活特权菜单，下键打开菜单，ESC关闭" class="pop-menu pop-menu2">
+	  	<a href="javascript:;">生活特权</a>
+	    <ul role="menu" aria-hidden="true">
+	      <li role="menuitemradio" aria-checked="false"><a href="javascript:;">移动专区</a></li>
+	      <li role="menuitemradio" aria-checked="false"><a href="javascript:;">安全专区</a></li>
+	      <li role="menuitemradio" aria-checked="false"><a href="javascript:;">网页专区</a></li>
+	    </ul>
+	  </li>
+	</ul>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+<div><a href="javascript:;" class="tt1">之后的内容</a></div>
+
+<script src="http://source1.qq.com/wsd/jquery-1.4.2.min.js"></script>
+<script src="../js/function.js"></script>
+<script>
+	$(document).ready(function () {
+		$.fn.second_menu({
+			target_ele: '.pop-menu1',    //二级菜单的li的类名
+			target_next: '.tt'           //二级菜单前后失去焦点的元素
+		});
+		$.fn.second_menu({
+			target_ele: '.pop-menu2',    //二级菜单的li的类名
+			target_next: '.tt1'          //二级菜单前后失去焦点的元素
+		});
+	});
+</script>
+</body>
+</html>

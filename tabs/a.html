@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    *{margin:0;padding:0;}
+    ul{list-style: none;}
+    body{
+      -webkit-user-select:none;
+    }
+.com-tab{
+  width:430px;
+  margin: 200px 0 0 300px;
+}
+.com-tab-listtitle{
+  overflow:hidden;
+  _zoom:1;
+}
+.com-tab-listtitle li{
+  float:left;
+  width:100px;
+  margin-right:40px;
+  background-color:#0F0;
+}
+.com-tab-listtitle li a{
+  display: block;
+}
+.com-tab-listtitle .com-tab-nownav{
+  background-color:#00F;
+}
+.com-tab-content{
+  margin-top:-1px;
+  position: relative;
+  height: 170px;
+  width: 430px;
+  overflow: hidden;
+}
+.com-tab-content li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 170px;
+    width: 430px;
+}
+.com-tab-content .touch-style{
+    position: static;
+    float: left;
+}
+  </style>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="http://source1.qq.com/wsd/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<a href="#">我是链接</a>
+
+
+<div class="com-tab" tabindex="0">
+    <ul class="com-tab-listtitle" role="tablist" tabindex="0" aria-label="便民中心服务，按左右键
+切换tab选项，按tab键切入内容区域">
+        <li class="com-tab-nownav"><a href="javascript:;" role="tab" aria-controls="panelA" tabindex="-1">选项卡一</a></li>
+        <li><a href="javascript:;" role="tab" aria-controls="panelB" tabindex="-1">选项卡二</a></li>
+        <li><a href="javascript:;" role="tab" aria-controls="panelC" tabindex="-1">选项卡三</a></li>
+        <!--<a href="aaa.html" class="com-tab-link">&gt;&gt;更多</a>-->
+    </ul>
+    <div class="com-tab-content">
+        <ul>
+            <li role="tabpanel" tabindex="0" aria-label="进入内容区块" id="panelA">aaaaaaaaaaaaaa <a href="javascript:;">a模块</a>111111</li>
+            <li role="tabpanel" tabindex="0" aria-label="进入内容区块" id="panelB">bbbbbbbbbbbbb<a href="javascript:;">b模块</a>2222222</li>
+            <li role="tabpanel" tabindex="0" aria-label="进入内容区块" id="panelC">ccccccccccccccc<a href="javascript:;">c模块</a>333333333</li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="banner-prev" title="上一个"></a>
+    <a href="javascript:;" class="banner-next" title="下一个"></a>
+</div>
+
+<a href="#">我是链接</a>
+    
+<script src="http://source1.qq.com/wsd/jquery-1.4.2.min.js"></script>
+<script src="http://source1.qq.com/wsd/iscroll.js"></script>
+<!-- <script src="http://source1.qq.com/wsd/function-min.js"></script> -->
+<script src="function.js"></script>
+<script>
+  $(document).ready(function () {
+        $.fn.tab({
+            tab : 'com-tab',
+            plist : 'com-tab-listtitle',
+            listafter : 'com-tab-nownav',
+            pcontent : 'com-tab-content',
+            action : 'click',
+            type : 'show'
+        });
+  });
+</script>
+</body>
+</html>
